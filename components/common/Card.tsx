@@ -1,12 +1,13 @@
-import React from 'react';
-import { CardProps } from '../types/card';
+import React from "react";
+import { CardProps } from "@/types/card";
 
-const Card: React.FC<CardProps> = ({ title, description, imageUrl, onClick }) => (
-  <div onClick={onClick} className="p-4 border rounded shadow-sm cursor-pointer">
-    {imageUrl && <img src={imageUrl} alt={title} className="mb-2 w-full h-48 object-cover" />}
-    <h2 className="text-lg font-semibold">{title}</h2>
-    {description && <p className="text-gray-600">{description}</p>}
+export const Card: React.FC<CardProps> = ({ title, description, imageUrl, onClick }) => (
+  <div
+    onClick={onClick}
+    className="p-4 border rounded shadow-sm cursor-pointer hover:shadow-md transition"
+  >
+    <img src={imageUrl} alt={title} className="w-full h-40 object-cover rounded" />
+    <h3 className="text-lg font-semibold mt-2">{title}</h3>
+    <p className="text-sm text-gray-600">{description}</p>
   </div>
 );
-
-export default Card;

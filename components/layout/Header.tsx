@@ -1,6 +1,12 @@
 // components/layout/Header.tsx
 
 import React from "react";
+import React from "react";
+
+export const Header = () => (
+  <header className="p-4 bg-gray-900 text-white">Property Listing App</header>
+);
+
 
 const Header: React.FC = () => {
   return (
@@ -30,3 +36,6 @@ const Header: React.FC = () => {
 };
 
 export default Header;
+
+
+
