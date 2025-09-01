@@ -9,7 +9,7 @@ interface Property {
   imageUrl: string;
 }
 
-const PropertyCard = ({ propertyId }: { propertyId: string }) => {
+export const PropertyCard = ({ propertyId }: { propertyId: string }) => {
   const [property, setProperty] = useState<Property | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -48,5 +48,3 @@ const PropertyCard = ({ propertyId }: { propertyId: string }) => {
     </div>
   );
 };
-
-export default PropertyCard;

@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 
-const ReviewSection = ({ propertyId }: { propertyId: string }) => {
+export const ReviewSection = ({ propertyId }: { propertyId: string }) => {
   const [reviews, setReviews] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -37,5 +37,3 @@ const ReviewSection = ({ propertyId }: { propertyId: string }) => {
     </div>
   );
 };
-
-export default ReviewSection;

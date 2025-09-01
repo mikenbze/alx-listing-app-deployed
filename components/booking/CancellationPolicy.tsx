@@ -1,4 +1,6 @@
-const CancellationPolicy = () => (
+import React from "react";
+
+export const CancellationPolicy = () => (
   <div className="mt-6">
     <h2 className="text-xl font-semibold">Cancellation policy</h2>
     <p className="mt-2 text-gray-600">
@@ -12,5 +14,3 @@ const CancellationPolicy = () => (
     </ul>
   </div>
 );
-
-export default CancellationPolicy;
