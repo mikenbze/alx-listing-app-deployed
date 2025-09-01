@@ -1,3 +1,5 @@
+import React from "react";
+
 const BookingForm = () => (
   <div className="bg-white p-6 shadow-md rounded-lg">
     <h2 className="text-xl font-semibold">Contact Detail</h2>
@@ -74,8 +76,9 @@ const BookingForm = () => (
       </button>
     </form>
   </div>
-  
- const CancellationPolicy = () => (
+);
+
+const CancellationPolicy = () => (
   <div className="mt-6">
     <h2 className="text-xl font-semibold">Cancellation policy</h2>
     <p className="mt-2 text-gray-600">
@@ -90,8 +93,4 @@ const BookingForm = () => (
   </div>
 );
 
-export default CancellationPolicy; 
-  
-);
-
-export default BookingForm;
+export { BookingForm, CancellationPolicy };
